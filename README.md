@@ -17,3 +17,10 @@ A functional OS
 - switch from real-mode to protected-mode
 - clear text mode screen
 - simple print routine
+
+### Basic IO
+
+- basic VGA text-mode driver for screen output
+- clears screen, moves cursor, write character, scrolls screen
+- reads scancodes from port `0x60/0x64` and converts to ASCII
+
