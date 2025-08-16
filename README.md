@@ -24,3 +24,10 @@ A functional OS
 - clears screen, moves cursor, write character, scrolls screen
 - reads scancodes from port `0x60/0x64` and converts to ASCII
 
+### Transition to C
+
+- set up linker script
+- set up makefile
+- in bootloader - transition from 16-bit to 32-bit, disable interrupts, enable A20 line, load GDT, far jump
+- in asm kernel - VGA routines
+- transfer control to an external C kernal (`kmain`)
